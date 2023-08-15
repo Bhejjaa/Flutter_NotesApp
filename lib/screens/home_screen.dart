@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.teal, // Changed background color to teal
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
@@ -23,13 +23,13 @@ class HomeScreen extends StatelessWidget {
           size: 30,
           color: Colors.white,
         ),
-        backgroundColor: Colors.lightBlue.shade100,
+        backgroundColor: Colors.orange, // Changed FAB background color to orange
       ),
       appBar: AppBar(
         title: Text('Notes'),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Colors.pinkAccent[100],
+        backgroundColor: Colors.orange, // Changed app bar background color to orange
       ),
       body: Consumer<NotesOperation>(
         builder: (context, NotesOperation data, child) {
@@ -46,10 +46,7 @@ class HomeScreen extends StatelessWidget {
 
 class NotesCard extends StatelessWidget {
   final Note note;
-  /*const NotesCard({
-    Key? key,
-    required this.note,
-  }) : super(key: key);*/
+
   NotesCard(this.note);
 
   @override
@@ -66,7 +63,7 @@ class NotesCard extends StatelessWidget {
         padding: EdgeInsets.all(15),
         height: 150,
         decoration: BoxDecoration(
-          color: Colors.lightBlue.shade100,
+          color: Colors.orange, // Changed card color to orange
           borderRadius: BorderRadius.circular(15),
         ),
         child: Column(

@@ -10,12 +10,12 @@ class AddScreen extends StatelessWidget {
     late String titleText;
     late String description;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.teal,
       appBar: AppBar(
         title: Text('Notes'),
         centerTitle: true,
         elevation: 0,
-        backgroundColor: Colors.pinkAccent[100],
+        backgroundColor: Colors.orange,
       ),
       body: Padding(
         padding: const EdgeInsets.all(15.0),
